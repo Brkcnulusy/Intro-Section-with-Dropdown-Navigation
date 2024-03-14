@@ -1,105 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Intro section with dropdown navigation</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=League+Spartan:wght@500;600;700&family=Mynerve&family=Overpass:ital@0;1&family=Rubik:wght@300;400;500&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <div class="container">
-    <header>
-      <div class="logo-wrapper">
-        <img src="./assets/images/logo.svg" alt="logo">
-      </div>
-      <nav>
-        <div class="navbar">
-          <ul>
-            <li>
-              <span class="feature active">Features</span>
-              <img class="js-menu" src="./assets/images/icon-arrow-down.svg" alt="">
-              <div class="menu-items-features">
-                <div class="menu-item">
-                  <img src="./assets/images/icon-todo.svg" alt="todo">
-                  <span>Todo List</span>
-                </div>
-                <div class="menu-item">
-                  <img src="./assets/images/icon-calendar.svg" alt="celander">
-                  <span>Calendar</span>
-                </div>
-                <div class="menu-item">
-                  <img src="./assets/images/icon-reminders.svg" alt="reminders">
-                  <span>Reminders</span>
-                </div>
-                <div class="menu-item">
-                  <img src="./assets/images/icon-planning.svg" alt="planning">
-                  <span>Planning</span>
-                </div>
-              </div>
-            </li>
-            <li>
-              <span class="company">Company</span>
-              <img class="js-menu" src="./assets/images/icon-arrow-down.svg" alt="">
-              <div class="menu-items-company">
-                <div class="menu-item">
-                  <span>History</span>
-                </div>
-                <div class="menu-item">
-                  <span>Our Team</span>
-                </div>
-                <div class="menu-item">
-                  <span>Blog</span>
-                </div>
-              </div>
-            </li>
-            <li>
-              <span>Careers</span>
-            </li>
-            <li>
-              <span>About</span>
-            </li>
-          </ul>
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=League+Spartan:wght@500;600;700&family=Mynerve&family=Overpass:ital@0;1&family=Rubik:wght@300;400;500&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo-wrapper">
+          <img src="./assets/images/logo.svg" alt="logo" />
         </div>
-        <div class="user-actions">
-          <button>Login</button>
-          <button>Register</button>
+        <div class="hamburger-menu js-hamburger-menu">
+          <img src="./assets/images/icon-menu.svg" alt="hamburgermenu" />
         </div>
-      </nav>
-    </header>
-    <main>
-      <section class="content">
-        <div class="content-title">
-          <h1>Make remote work</h1>
-        </div>
-        <div class="content-text">
-          <p>
-            Get your team in sync, no matter your location. Streamline processes, 
-          create team rituals, and watch productivity soar.
-          </p>
-        </div>
-        <div class="content-learn-more">
-          <button>Learn more</button>
-        </div>
-        <div class="content-footer">
-          <img src="./assets/images/client-databiz.svg" alt="databiz">
-          <img src="./assets/images/client-audiophile.svg" alt="audiophile">
-          <img src="./assets/images/client-meet.svg" alt="meet">
-          <img src="./assets/images/client-maker.svg" alt="maker">
-        </div>
-      </section>
-      <section class="banner">
-        <img src="./assets/images/image-hero-desktop.png" alt="">
-      </section>
-    </main>
-  </div>
+        <nav class="js-navbar">
+          <div class="close-menu">
+            <img class="js-close-icon" src="./assets/images/icon-close-menu.svg" alt="closemenu" />
+          </div>
+          <div class="navbar">
+            <ul>
+              <li>
+                <div class="menu-feature">
+                  <span class="feature js-feature">Features</span>
+                  <img class="js-feature-icon" src="./assets/images/icon-arrow-down.svg" alt="icon" />
+                </div>
+                <div class="features-dropdown js-features-dropdown">
+                  <div class="menu-item">
+                    <img src="./assets/images/icon-todo.svg" alt="todo" />
+                    <span>Todo List</span>
+                  </div>
+                  <div class="menu-item">
+                    <img
+                      src="./assets/images/icon-calendar.svg"
+                      alt="celander"
+                    />
+                    <span>Calendar</span>
+                  </div>
+                  <div class="menu-item">
+                    <img
+                      src="./assets/images/icon-reminders.svg"
+                      alt="reminders"
+                    />
+                    <span>Reminders</span>
+                  </div>
+                  <div class="menu-item">
+                    <img
+                      src="./assets/images/icon-planning.svg"
+                      alt="planning"
+                    />
+                    <span>Planning</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="menu-company">
+                  <span class="company js-company">Company</span>
+                  <img class="js-company-icon" src="./assets/images/icon-arrow-down.svg" alt="icon" />
+                </div>
+                <div class="company-dropdown js-company-dropdown">
+                  <div class="menu-item">
+                    <span>History</span>
+                  </div>
+                  <div class="menu-item">
+                    <span>Our Team</span>
+                  </div>
+                  <div class="menu-item">
+                    <span>Blog</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <span>Careers</span>
+              </li>
+              <li>
+                <span>About</span>
+              </li>
+            </ul>
+          </div>
+          <div class="user-actions">
+            <button>Login</button>
+            <button>Register</button>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <section class="content">
+          <div class="content-title">
+            <h1>Make remote work</h1>
+          </div>
+          <div class="content-text">
+            <p>
+              Get your team in sync, no matter your location. Streamline
+              processes, create team rituals, and watch productivity soar.
+            </p>
+          </div>
+          <div class="content-learn-more">
+            <button>Learn more</button>
+          </div>
+          <div class="content-footer">
+            <img src="./assets/images/client-databiz.svg" alt="databiz" />
+            <img src="./assets/images/client-audiophile.svg" alt="audiophile" />
+            <img src="./assets/images/client-meet.svg" alt="meet" />
+            <img src="./assets/images/client-maker.svg" alt="maker" />
+          </div>
+        </section>
+        <section class="banner">
+          <img class="js-banner" src="./assets/images/image-hero-desktop.png" alt="banner" />
+        </section>
+      </main>
+    </div>
 
-  <script type="module" src="./js/app.js"></script>  
-</body>
+    <script type="module" src="./js/app.js"></script>
+  </body>
 </html>
