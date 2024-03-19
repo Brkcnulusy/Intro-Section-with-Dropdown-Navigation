@@ -3,8 +3,6 @@ import { addClass, closeElement, openElement, removeClass } from "./ui.js";
 const introSection = (function () {
   // Variables
 
-  const featureIcons = document.querySelectorAll(".js-feature-icon");
-  const companyIcons = document.querySelectorAll(".js-company-icon");
   const featureMenu = document.querySelector(".js-feature");
   const companyMenu = document.querySelector(".js-company");
   const featureDropdown = document.querySelector(".js-features-dropdown");
